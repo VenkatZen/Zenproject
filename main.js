@@ -31,7 +31,33 @@ function setusername()
 }
 if(localStorage.getItem('name'))
 {
-   setusername();
+   setusername();var show=document.getElementById('apple');
+   show.onclick=apple;
+   function apple()
+   {
+      if(show.style.color!='red')
+      {
+          show.style.color='red';
+      }
+      else 
+      {
+       show.style.color='black';
+      }
+      
+   }var show=document.getElementById('apple');
+   show.onclick=apple;
+   function apple()
+   {
+      if(show.style.color!='red')
+      {
+          show.style.color='red';
+      }
+      else 
+      {
+       show.style.color='black';
+      }
+      
+   }
 }
 else{
     var storedname=localStorage.getItem('name');
@@ -41,9 +67,47 @@ mybutton.onclick=function()
 {
     setusername();
 }
-var show=document.querySelector('p');
+var show=document.getElementById('apple');
 show.onclick=display;
 function display()
 {
-    show.style.color='red';
+    
+   if(show.style.color!='red')
+   {
+       
+       show.style.color='red';
+   }
+   else 
+   {
+    show.style.color='black';
+   }
+   
+}
+var app=document.getElementById('doodle');
+app.onclick=androblack;id;
+function android()
+black;{
+    if(app.style.color!='red')
+    {
+        app.style.color='red';
+    }
+    else 
+    {
+     app.style.color='black';
+    }
+    
+}
+var win=document.getElementById('windows');
+win.onclick=windows;
+function windows()
+{
+    if(win.style.color!='red')
+    {
+        win.style.color='red';
+    }
+    else 
+    {
+     win.style.color='black';
+    }
+    
 }
