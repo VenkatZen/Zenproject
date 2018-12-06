@@ -41,3 +41,9 @@ mybutton.onclick=function()
 {
     setusername();
 }
+var show=document.querySelector('p');
+show.onclick=display;
+function display()
+{
+    show.style.color='red';
+}
