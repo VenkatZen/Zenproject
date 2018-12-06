@@ -31,33 +31,7 @@ function setusername()
 }
 if(localStorage.getItem('name'))
 {
-   setusername();var show=document.getElementById('apple');
-   show.onclick=apple;
-   function apple()
-   {
-      if(show.style.color!='red')
-      {
-          show.style.color='red';
-      }
-      else 
-      {
-       show.style.color='black';
-      }
-      
-   }var show=document.getElementById('apple');
-   show.onclick=apple;
-   function apple()
-   {
-      if(show.style.color!='red')
-      {
-          show.style.color='red';
-      }
-      else 
-      {
-       show.style.color='black';
-      }
-      
-   }
+   setusername();
 }
 else{
     var storedname=localStorage.getItem('name');
@@ -84,9 +58,9 @@ function display()
    
 }
 var app=document.getElementById('doodle');
-app.onclick=androblack;id;
+app.onclick=android;
 function android()
-black;{
+{
     if(app.style.color!='red')
     {
         app.style.color='red';
