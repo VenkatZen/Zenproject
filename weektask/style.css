@@ -18,6 +18,15 @@ html{
      background-size: 20px;
      object-fit: cover;
 }
+#navigation{
+    width: 100%;
+    background-color: gray;
+    
+}
+a{
+    font-size: 20px;
+    color: black;
+}
 
 
 
