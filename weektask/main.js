@@ -5,7 +5,7 @@ function changename()
     localStorage.setItem('name',uname);
     fhalf.textContent='welcome to FLB '+uname;
 }
-if(localStorage.getItem('name'))
+if(!localStorage.getItem('name'))
 {
     changename();
 }
@@ -13,4 +13,5 @@ else{
     var setname=localStorage.getItem('name');
     fhalf.textContent='welcome to FLB '+setname;
 }
+
 
