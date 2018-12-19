@@ -1,5 +1,4 @@
-var index = [
-  empone = {
+var index = [{
     name: 'venkat',
     id: 1,
     transport: 'bike',
@@ -8,9 +7,9 @@ var index = [
     experience: 3,
     dateofjoin: new Date("2015"),
     position: 'developer',
-    type:'village'
+    type: 'village'
   },
-  emptwo = {
+  {
     name: 'krishnan',
     id: 2,
     transport: 'car',
@@ -19,9 +18,9 @@ var index = [
     experience: 4,
     dateofjoin: new Date("2014"),
     position: 'teamleader',
-    type:'metropolitan'
+    type: 'metropolitan'
   },
-  empthree = {
+  {
     name: 'sparrow',
     id: 3,
     transport: 'train',
@@ -30,9 +29,9 @@ var index = [
     experience: 11,
     dateofjoin: new Date("2007"),
     position: 'projectmanager',
-    type:'metropolitan'
+    type: 'metropolitan'
   },
-  empfour = {
+  {
     name: 'sakthi',
     id: 4,
     transport: 'bike',
@@ -41,26 +40,22 @@ var index = [
     position: 'teamleader',
     dateofjoin: new Date("2013"),
     city: 'madurai',
-    type:'village'
+    type: 'village'
 
   }
 ];
 
+
+
 function filterExperience() {
-  for (var i = 0; i < index.length; i++) {
-    if (index[i].experience <= 5) {
-      console.log(index[i]);
-    }
-  }
+  const result = index.filter(index => index.experience > 5);
+  console.log(result);
 }
 
 function findTransport() {
-  var trans = document.getElementById('vechile').value;
-  for (var i = 0; i < index.length; i++) {
-    if (index[i].transport == trans) {
-      console.log(index[i]);
-    }
-  }
+  var search = document.getElementById('transport').value;
+  var resultt = index.filter(index => index.transport == search);
+  console.log(resultt);
 }
 
 function addingNewUser() {
@@ -73,17 +68,14 @@ function addingNewUser() {
     dateofjoin: new Date("2016"),
     position: 'developer',
     city: 'chennai',
-    type:'metropolitan'
+    type: 'metropolitan'
   })
-  console.log(index);
+  console.findvehicle
 }
 
 function ageLimit() {
-  for (var i = 0; i < index.length; i++) {
-    if ((index[i].age >= 25) && (index[i].age <= 45)) {
-      console.log(index[i]);
-    }
-  }
+  var result = index.filter(index => index.age > 25 && index.age < 45);
+  console.log(result);
 }
 
 function sortingByJoining() {
@@ -103,36 +95,25 @@ function sortingByJoining() {
 }
 
 function selectPosition() {
-  var pos = document.getElementById('position').value;
-  for (var i = 0; i < index.length; i++) {
-    if (index[i].position == pos) {
-      console.log(index[i]);
-
-    }
-  }
+  var search = document.getElementById('position').value;
+  var resultt = index.filter(index => index.position == search);
+  console.log(resultt);
 }
+
 function selectLocation() {
-  var loc = document.getElementById('location').value;
-  for (var i = 0; i < index.length; i++) {
-    if (index[i].city == loc) {
-      console.log(index[i]);
-    }
-  }
+  var search = document.getElementById('location').value;
+  var resultt = index.filter(index => index.city == search);
+  console.log(resultt);
 }
 
-function selectUser()
-{
+function selectUser() {
   var user = document.getElementById('name').value;
-  for (var i = 0; i < index.length; i++) {
-    if (index[i].name == user) {
-      console.log(index[i]);
-    }
-  }
+  var resultt = index.filter(index => index.name == user);
+  console.log(resultt);
 }
 
-function cityType()
-{
-  var city=document.getElementById('type').value;
-  console.log(city=='metropolitan');
+function cityType() {
+  var city = document.getElementById('type').value;
+  console.log(city == 'metropolitan');
 
-  }
+}
